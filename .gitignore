@@ -1,0 +1,11 @@
+job_hunt_agent/config.py
+job_hunt_agent/credentials.json
+job_hunt_agent/token.json
+job_hunt_agent/state.db
+job_hunt_agent/tailored_resumes/
+job_hunt_agent/screenshots/
+job_hunt_agent/logs/
+job_hunt_agent/__pycache__/
+job_hunt_agent/write_*.py
+*.pyc
+.env

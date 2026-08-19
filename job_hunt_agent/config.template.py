@@ -1,0 +1,17 @@
+ANTHROPIC_API_KEY = "your-anthropic-api-key-here"
+HUNTER_API_KEY = "your-hunter-api-key-here"
+JOB_SEARCH_QUERIES = ["Backend Engineer", "AI Engineer", "LLM Engineer"]
+JOB_LOCATION = "United States"
+JOBS_PER_DAY = 30
+COLD_EMAILS_PER_DAY = 0
+EXPERIENCE_LEVEL = "Mid-Senior"
+YOUR_NAME = "Your Name"
+YOUR_EMAIL = "your.email@gmail.com"
+YOUR_LINKEDIN = "https://linkedin.com/in/yourprofile"
+YOUR_GITHUB = "https://github.com/yourusername"
+REJECTION_FOLDER = "Job Rejections"
+INTERVIEW_FOLDER = "Interviews"
+DAILY_JOB_SEARCH_TIME = "09:00"
+EMAIL_SCHEDULER_TIME = "10:00"
+INBOX_CHECK_INTERVAL_MINUTES = 60
+CLAUDE_MODEL = "claude-sonnet-4-6"
