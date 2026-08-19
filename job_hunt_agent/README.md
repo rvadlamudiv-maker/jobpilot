@@ -88,6 +88,7 @@ ngrok http 8080
 
 ## Project Structure
 
+```
 job_hunt_agent/
 ├── config.template.py         Configuration template (copy to config.py)
 ├── database.py                SQLite state store
@@ -104,6 +105,7 @@ job_hunt_agent/
 ├── dashboard.py               Live web dashboard
 ├── orchestrator.py            Master scheduler
 └── base_resume.txt            Your base resume (not committed)
+```
 
 ## Cost
 
