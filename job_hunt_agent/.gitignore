@@ -1,0 +1,11 @@
+config.py
+credentials.json
+token.json
+state.db
+tailored_resumes/
+screenshots/
+logs/
+__pycache__/
+*.pyc
+.env
+write_*.py
