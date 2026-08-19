@@ -94,7 +94,7 @@ def run_email_scheduler(dry_run=False):
 
     # Phase 1: Cold emails
     pending = get_pending_outreach()
-    print(f"  Pending cold emails: {{len(pending)}}")
+    print(f"  Pending cold emails: {0}")
     for row in pending:
         conn = get_conn()
         app = conn.execute(
@@ -124,7 +124,7 @@ def run_email_scheduler(dry_run=False):
 
     # Phase 2: Follow-up 1 (7 days after cold)
     followups1 = get_followup1_due(days=7)
-    print(f"\n  Follow-up 1 due: {{len(followups1)}}")
+    print(f"\n  Follow-up 1 due: {len(followups1)}")
     for row in followups1:
         conn = get_conn()
         r = conn.execute("SELECT notes, job_title FROM email_outreach e JOIN applications a ON e.application_id = a.id WHERE e.id = ?", (row["id"],)).fetchone()
@@ -146,7 +146,7 @@ def run_email_scheduler(dry_run=False):
 
     # Phase 3: Follow-up 2 (7 days after follow-up 1)
     followups2 = get_followup2_due(days=7)
-    print(f"\n  Follow-up 2 due: {{len(followups2)}}")
+    print(f"\n  Follow-up 2 due: {len(followups2)}")
     for row in followups2:
         conn = get_conn()
         r = conn.execute("SELECT notes, job_title FROM email_outreach e JOIN applications a ON e.application_id = a.id WHERE e.id = ?", (row["id"],)).fetchone()
@@ -168,7 +168,7 @@ def run_email_scheduler(dry_run=False):
 
     # Phase 4: Thank-you (7 days after follow-up 2)
     thankyous = get_thankyou_due(days=7)
-    print(f"\n  Thank-you emails due: {{len(thankyous)}}")
+    print(f"\n  Thank-you emails due: {len(thankyous)}")
     for row in thankyous:
         conn = get_conn()
         r = conn.execute("SELECT notes, job_title FROM email_outreach e JOIN applications a ON e.application_id = a.id WHERE e.id = ?", (row["id"],)).fetchone()
