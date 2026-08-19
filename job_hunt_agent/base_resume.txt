@@ -1,0 +1,33 @@
+V R Vamsi Krishna
+San Francisco, CA  •  +1 (510) 516-3404  •  rvadlamudiv@gmail.com  •  linkedin.com/in/vamsivadlamudi
+SUMMARY
+Software Engineer with 4+ years at Google and Goldman Sachs building large-scale distributed systems, production AI/LLM applications, and high-throughput backend services. Proficient in Java, Python, TypeScript, Spring Boot, Kafka, AWS, and LangChain. Experienced in building and deploying backend services and AI-powered applications from development through production, using Claude and Cursor daily as core development tools.
+TECHNICAL SKILLS
+Languages: Java, Python, TypeScript, JavaScript, Go (familiar), SQL
+Technologies: AWS (ECS, Lambda, SQS, DynamoDB, RDS, S3), GCP (Pub/Sub, Cloud Run), Docker, Kubernetes, Terraform, CI/CD, DataDog, Prometheus, Git
+Frameworks: Spring Boot, Node.js, React, GraphQL, gRPC, REST APIs, Apache Kafka, LangChain, OpenAI API, RAG, pgvector, Microservices
+Databases: PostgreSQL, MySQL, DynamoDB, Redis, Elasticsearch (familiar)
+WORK EXPERIENCE
+Goldman Sachs  —  Software Engineer (Contract)Jul 2024 – Present
+Redesigned Kafka event processing platform handling 2M+ events/day — implemented multi-threaded consumers with backpressure control and dead-letter queuing, reducing settlement errors by 30% and manual intervention by 60%.
+Shipped a production LLM assistant using LangChain, GPT-4, and RAG over 50K+ financial documents — automated compliance workflows, cutting reporting time by 40%; adopted by risk teams within weeks of launch.
+Architected distributed audit logging across 12 microservices with event-sourcing and idempotent consumers — achieved 99.9% delivery reliability across 500K+ daily events; met SOX regulatory traceability requirements.
+Built AWS SQS/Lambda async workflows handling 10K+ messages/min — reduced peak-load bottlenecks by 45%; instrumented DataDog APM cutting MTTD from 20+ minutes to under 6 minutes across 8 services.
+Optimized DynamoDB and Redis data layers — fixed hot-partition issues and introduced query caching, reducing average API response times by 38%; deployed via Kubernetes CI/CD maintaining 99.9% uptime.
+Google  —  Software Engineer (Contract)May 2021 – Jul 2023
+Built time-series forecasting models for revenue prediction, exploring new forecasting methods robust to volatility from abnormal periods — implemented optimized parameter tuning for Fargo, Google's internal forecasting platform, improving forecast accuracy.
+Implemented an ensemble forecasting algorithm with dynamic change point analysis — generated a more robust, adaptive aggregated forecast across shifting business conditions.
+Contributed to hardening two high-traffic services — implemented circuit breakers and bulkhead isolation patterns as part of a team effort to improve resiliency and reduce cascading failures.
+Built a Redis caching layer for high-traffic services — reduced redundant downstream calls and improved read latency; grew unit and integration test coverage using JUnit and TestContainers.
+Developed a GraphQL federation layer across backend APIs to simplify data access for frontend teams — reduced redundant API contracts and improved developer velocity for downstream consumers.
+PROJECTS
+Prognify  Python, PySpark, Scikit-learn, AWS, Collaborative Filtering, K-Means
+Engineered a scalable ML recommendation pipeline processing 50M+ records on PySpark using collaborative filtering (KNN) and K-Means clustering — designed modular preprocessing and feature engineering pipelines improving training efficiency and prediction quality at scale.
+Built real-time prediction serving backend on AWS with optimized query performance and large-scale data handling — reduced processing bottlenecks and improved end-to-end pipeline latency for personalized recommendation delivery.
+Deployed and tested end-to-end ML workflows for real-time usage scenarios on AWS — integrated ML models with backend serving systems and validated prediction accuracy and system reliability across 50M+ record datasets.
+SentinelAI  Java, TypeScript, Spring Boot, Kafka, React, PostgreSQL, Redis, Kubernetes, AWS
+Built and shipped a full-stack real-time monitoring platform solo ingesting 100K+ events/min via Kafka — implemented multi-tenant PostgreSQL with row-level security, Redis caching, and fault-tolerant consumer groups; deployed on Kubernetes sustaining P99 under 200ms under 3x burst traffic.
+Integrated LLM-powered anomaly classification using Claude and Cursor as primary development tools — built React dashboards reducing anomaly detection time by 55%; shipped end-to-end in under 3 weeks with 85% unit test coverage.
+Implemented per-tenant rate limiting and automated retry workflows with dead-letter queuing — eliminated manual intervention across all failure scenarios; designed CI/CD pipeline on Kubernetes with automated rollback maintaining 99.9% uptime.
+EDUCATION
+California State University, East Bay  ·  M.S. Statistics (Data Science)  ·  May 2025
